@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.handyhandouts.model.HandyhandoutMessage;
 import com.handyhandouts.service.HandyhandoutMessageService;
 
-@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/test")
 public class TestApplicationController {

@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.handyhandouts.Repository.HandhandoutMessageRepo;
 import com.handyhandouts.model.HandyhandoutMessage;
+import com.handyhandouts.repository.HandhandoutMessageRepo;
 
 @Service
 public class HandyhandoutMessageService {
