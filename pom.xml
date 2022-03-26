@@ -88,6 +88,14 @@
 			<version>0.5.1</version>
 		</dependency>
 		
+		 <!-- Add JaCoCo dependency so we can display test results -->
+
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
+        </dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>

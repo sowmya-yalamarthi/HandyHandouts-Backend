@@ -27,9 +27,10 @@ import javax.validation.Valid;
 import java.net.URI;
 import java.util.Optional;
 
-@CrossOrigin(origins="*")
+
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin("*")
 public class AuthController {
 
     @Autowired
