@@ -2,7 +2,7 @@ package com.handyhandouts.controller;
 
 import com.handyhandouts.exception.ResourceNotFoundException;
 import com.handyhandouts.model.User;
-import com.handyhandouts.repository.UserRepository;
+import com.handyhandouts.Repository.UserRepository;
 import com.handyhandouts.security.CurrentUser;
 import com.handyhandouts.security.UserPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;

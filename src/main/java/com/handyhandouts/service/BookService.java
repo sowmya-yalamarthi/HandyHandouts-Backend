@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 import com.handyhandouts.dto.BookDto;
 import com.handyhandouts.model.Book;
 import com.handyhandouts.model.Courses;
-import com.handyhandouts.repository.BookRepositoary;
-import com.handyhandouts.repository.CourseRepository;
+import com.handyhandouts.Repository.BookRepositoary;
+import com.handyhandouts.Repository.CourseRepository;
 
 @Service
 public class BookService {

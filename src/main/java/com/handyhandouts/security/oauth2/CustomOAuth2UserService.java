@@ -3,7 +3,7 @@ package com.handyhandouts.security.oauth2;
 import com.handyhandouts.exception.OAuth2AuthenticationProcessingException;
 import com.handyhandouts.model.AuthProvider;
 import com.handyhandouts.model.User;
-import com.handyhandouts.repository.UserRepository;
+import com.handyhandouts.Repository.UserRepository;
 import com.handyhandouts.security.UserPrincipal;
 import com.handyhandouts.security.oauth2.user.OAuth2UserInfo;
 import com.handyhandouts.security.oauth2.user.OAuth2UserInfoFactory;

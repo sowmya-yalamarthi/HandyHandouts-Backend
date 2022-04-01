@@ -3,7 +3,7 @@ package com.handyhandouts.security;
 
 import com.handyhandouts.exception.ResourceNotFoundException;
 import com.handyhandouts.model.User;
-import com.handyhandouts.repository.UserRepository;
+import com.handyhandouts.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

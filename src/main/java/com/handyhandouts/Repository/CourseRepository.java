@@ -1,4 +1,4 @@
-package com.handyhandouts.repository;
+package com.handyhandouts.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.handyhandouts.repository;
+package com.handyhandouts.Repository;
 
 import com.handyhandouts.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

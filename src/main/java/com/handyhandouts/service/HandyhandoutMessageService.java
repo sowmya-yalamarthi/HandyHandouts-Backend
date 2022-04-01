@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.handyhandouts.model.HandyhandoutMessage;
-import com.handyhandouts.repository.HandhandoutMessageRepo;
+import com.handyhandouts.Repository.HandhandoutMessageRepo;
 
 @Service
 public class HandyhandoutMessageService {

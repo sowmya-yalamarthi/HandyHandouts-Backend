@@ -6,8 +6,13 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 import com.handyhandouts.config.AppProperties;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+
+
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties.class)
+@EnableSwagger2
 public class HandyHandoutsApplication {
 
 	public static void main(String[] args) {

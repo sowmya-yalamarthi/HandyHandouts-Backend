@@ -8,7 +8,7 @@ import com.handyhandouts.payload.ApiResponse;
 import com.handyhandouts.payload.AuthResponse;
 import com.handyhandouts.payload.LoginRequest;
 import com.handyhandouts.payload.SignUpRequest;
-import com.handyhandouts.repository.UserRepository;
+import com.handyhandouts.Repository.UserRepository;
 import com.handyhandouts.security.TokenProvider;
 
 import org.springframework.beans.factory.annotation.Autowired;
