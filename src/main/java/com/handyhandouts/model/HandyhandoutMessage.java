@@ -2,9 +2,7 @@ package com.handyhandouts.model;
 
 import javax.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 
 @Entity
