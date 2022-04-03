@@ -1,6 +1,15 @@
 package com.handyhandouts.config;
 
 import com.handyhandouts.security.*;
+
+
+
+import com.handyhandouts.security.oauth2.CustomOAuth2UserService;
+import com.handyhandouts.security.oauth2.HttpCookieOAuth2AuthorizationRequestRepository;
+import com.handyhandouts.security.oauth2.OAuth2AuthenticationFailureHandler;
+import com.handyhandouts.security.oauth2.OAuth2AuthenticationSuccessHandler;
+import org.springframework.http.HttpMethod;
+
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
@@ -11,11 +20,6 @@ import springfox.documentation.swagger.web.UiConfiguration;
 import springfox.documentation.swagger.web.UiConfigurationBuilder;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import com.handyhandouts.security.oauth2.CustomOAuth2UserService;
-import com.handyhandouts.security.oauth2.HttpCookieOAuth2AuthorizationRequestRepository;
-import com.handyhandouts.security.oauth2.OAuth2AuthenticationFailureHandler;
-import com.handyhandouts.security.oauth2.OAuth2AuthenticationSuccessHandler;
-import org.springframework.http.HttpMethod;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -34,11 +38,10 @@ import org.springframework.security.oauth2.client.web.AuthorizationRequestReposi
 import org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+
 @Configuration
 @EnableWebSecurity
 @EnableSwagger2
-
-
 @EnableGlobalMethodSecurity(
         securedEnabled = true,
         jsr250Enabled = true,
@@ -77,7 +80,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new HttpCookieOAuth2AuthorizationRequestRepository();
     }
     
-    @Bean
+@Bean
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
           .select()                                  
@@ -85,7 +88,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
           .paths(PathSelectors.any())                          
           .build();                                           
     }
-    @Bean
+	
+	
+	@Bean
     UiConfiguration uiConfig() {
         return UiConfigurationBuilder.builder()
                 .deepLinking(true)
@@ -157,7 +162,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         .permitAll()
                         .antMatchers(HttpMethod.OPTIONS).permitAll()
                         .antMatchers("/auth/**", "/oauth2/**","/**/*")
-                    
                         .permitAll()
                     .anyRequest()
                         .authenticated()
