@@ -110,6 +110,17 @@ public class Book {
      
      @Column(name="course_id")
      private String course_id;
+     
+     @Column(name="image")
+     private String image;
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
 
 	public String getCourse_id() {
 		return course_id;
@@ -118,6 +129,8 @@ public class Book {
 	public void setCourse_id(String course_id) {
 		this.course_id = course_id;
 	}
+	
+
       
      
 }

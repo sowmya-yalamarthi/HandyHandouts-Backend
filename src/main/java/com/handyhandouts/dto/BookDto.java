@@ -62,4 +62,11 @@ public class BookDto {
 	  private LocalDate modified_date;
 	  private String course_id;
 	  private Courses course;
+	  private String image;
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 }

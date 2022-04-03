@@ -30,6 +30,7 @@ public class BookService {
 	  newBook.setRating(book.getRating());
 	  newBook.setCreated_by(book.getCreated_by());
 	  newBook.setCreated_date(LocalDate.now());
+	  newBook.setImage(book.getImage());
 	  if(book.getCourse_id() !=null) {
 	  newBook.setCourse_id(book.getCourse_id());
 	  }else {
@@ -66,6 +67,7 @@ public class BookService {
 		 updatebook.setBook_id(book.getBook_id());
 		 updatebook.setModified_date(LocalDate.now());
 		 updatebook.setRating(book.getRating());
+		 updatebook.setImage(book.getImage());
 		 updatebook.setTitle(book.getTitle());
 		 return bookRepo.save(updatebook);
 	}
@@ -79,6 +81,7 @@ public class BookService {
 			  newBook.setRating(book.getRating());
 			  newBook.setCreated_by(book.getCreated_by());
 			  newBook.setCreated_date(LocalDate.now());
+			  newBook.setImage(book.getImage());
 			  if(book.getCourse_id() !=null) {
 			  newBook.setCourse_id(book.getCourse_id());
 			  }else {
